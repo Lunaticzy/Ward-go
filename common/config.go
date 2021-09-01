@@ -18,6 +18,7 @@ func init() {
 	Config.ServerName = section.Key("server_name").String()
 	Config.Theme = section.Key("theme").String()
 	Config.Version = section.Key("version").String()
+	Config.RunMode = section.Key("run_mode").String()
 	Config.Port, _ = section.Key("port").Int()
 	runLocal, _ := section.Key("run_local").Bool()
 	if runLocal {
@@ -34,6 +35,7 @@ type ConfigStruct struct {
 	Version    string
 	Theme      string
 	ServerName string
+	RunMode    string
 	Host       string
 	Port       int
 	Addr       string
