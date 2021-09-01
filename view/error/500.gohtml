@@ -1,0 +1,39 @@
+{{define "error/500.gohtml" }}
+
+    <!DOCTYPE html>
+    <html id="html" theme="{{ .theme }}" lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>500</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/public/static/img/ico/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/assets/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/animations.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/colors.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/dimensions.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/fonts.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/shadows.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/static/css/themes.css"/>
+        <script type="text/javascript" src="/public/static/js/assets/three.min.js"></script>
+        <script type="text/javascript" src="/public/static/js/assets/vanta.min.js"></script>
+        <script type="text/javascript" src="/public/static/js/background.js"></script>
+        <script type="text/javascript" src="/public/static/js/globals.js"></script>
+        <script type="text/javascript" inline="javascript"> globalsInitialization(); </script>
+    </head>
+    <body id="background">
+    <script type="text/javascript"> backgroundInitialization(); </script>
+    <div class="container error">
+        <img class="error-img" src="/public/static/img/error/500.gif" alt="500.gif"/>
+        <div class="error-div">
+            <div class="code">500</div>
+            <div class="title">We have a problem...</div>
+            <div class="explanation">
+                <div>While we go down this rabbit hole.</div>
+                <div>Please go outside and enjoy the sunshine.</div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
+
+{{end }}
